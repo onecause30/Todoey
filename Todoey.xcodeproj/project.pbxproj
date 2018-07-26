@@ -8,23 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		E71CF644210597BB00ABE7D5 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E71CF642210597BB00ABE7D5 /* DataModel.xcdatamodeld */; };
+		E71FFFA721098142004018B8 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71FFFA621098142004018B8 /* CategoryViewController.swift */; };
 		E7FDF03121018C2700C7122C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FDF03021018C2700C7122C /* AppDelegate.swift */; };
 		E7FDF03321018C2700C7122C /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FDF03221018C2700C7122C /* TodoListViewController.swift */; };
 		E7FDF03621018C2700C7122C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7FDF03421018C2700C7122C /* Main.storyboard */; };
 		E7FDF03821018C2800C7122C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7FDF03721018C2800C7122C /* Assets.xcassets */; };
-		E7FDF04321045C1400C7122C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FDF04221045C1400C7122C /* Item.swift */; };
 		E7FDF04A21045EBB00C7122C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7FDF04921045EBB00C7122C /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E71CF643210597BB00ABE7D5 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		E71FFFA621098142004018B8 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		E7FDF02D21018C2700C7122C /* Todoey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todoey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7FDF03021018C2700C7122C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7FDF03221018C2700C7122C /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
 		E7FDF03521018C2700C7122C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E7FDF03721018C2800C7122C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7FDF03C21018C2800C7122C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E7FDF04221045C1400C7122C /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		E7FDF04921045EBB00C7122C /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,7 +72,6 @@
 			isa = PBXGroup;
 			children = (
 				E71CF642210597BB00ABE7D5 /* DataModel.xcdatamodeld */,
-				E7FDF04221045C1400C7122C /* Item.swift */,
 			);
 			path = DataModel;
 			sourceTree = "<group>";
@@ -80,6 +79,7 @@
 		E7FDF04521045DD300C7122C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E71FFFA621098142004018B8 /* CategoryViewController.swift */,
 				E7FDF03221018C2700C7122C /* TodoListViewController.swift */,
 			);
 			path = Controllers;
@@ -173,9 +173,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E71FFFA721098142004018B8 /* CategoryViewController.swift in Sources */,
 				E7FDF03321018C2700C7122C /* TodoListViewController.swift in Sources */,
 				E71CF644210597BB00ABE7D5 /* DataModel.xcdatamodeld in Sources */,
-				E7FDF04321045C1400C7122C /* Item.swift in Sources */,
 				E7FDF03121018C2700C7122C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,6 +313,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R5ADBMNLYN;
 				INFOPLIST_FILE = Todoey/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -330,6 +331,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R5ADBMNLYN;
 				INFOPLIST_FILE = Todoey/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
