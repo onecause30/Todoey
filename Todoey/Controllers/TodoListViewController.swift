@@ -11,7 +11,11 @@ import CoreData
 
 class TodoListViewController: UITableViewController  {
   var itemArray = [Item]()
-    
+    var selectedCategory : Category? {
+        didSet {
+            loadItems()
+        }
+    }
     
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
@@ -28,7 +32,7 @@ class TodoListViewController: UITableViewController  {
        
         
         
-        loadItems()
+        
         
         //  if let items = defaults.array(forKey: "TodoListArray") as? [Item] {
           //  itemArray = items
@@ -79,6 +83,7 @@ class TodoListViewController: UITableViewController  {
         let newItem = Item(context: self.context)
         newItem.title = textField.text!
         newItem.done = false
+        newItem.parentCategory = self.selectedCategory
      self.itemArray.append(newItem)
       
         self.saveItems()
