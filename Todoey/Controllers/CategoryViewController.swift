@@ -12,7 +12,7 @@ import RealmSwift
 class CategoryViewController: UITableViewController {
     var categories: Results<Category>?
     let realm = try! Realm()
-    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+   
     
     
     
